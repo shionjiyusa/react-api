@@ -21,4 +21,19 @@ class PictureController extends Controller
             'tags' => Tag::where('picture_id', 2),
         ];
     }
+
+    public function upload()
+    {
+        return true;
+    }
+
+    public function update()
+    {
+        return true;
+    }
+
+    public function delete()
+    {
+        return true;
+    }
 }
