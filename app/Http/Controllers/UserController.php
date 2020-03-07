@@ -8,7 +8,7 @@ use App\User;
 class UserController extends Controller
 {
     //
-    public function upload()
+    public function register()
     {
         return true;
     }

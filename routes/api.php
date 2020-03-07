@@ -13,8 +13,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/picture/{pid}', 'PictureController@getPicture');
-Route::get('/thumb/{orderType}/{page}', 'PictureController@getThumb');
+Route::get('/pictureBox', 'PictureController@getPictureBox');
+Route::get('/thumb/{orderType?}/{page?}', 'PictureController@getThumb');
 Route::get('/tag/{pid}', 'TagController@get');
 Route::get('/score/{pid}', 'ScoreController@get');
 
@@ -32,3 +32,7 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::put('/score/{sid}', 'ScoreController@update');
     Route::delete('/score/{sid}', 'ScoreController@delete');
 });
+
+Route::post('/login', 'Auth\LoginController@login');
+Route::post('/logout', 'Auth\LoginController@logout');
+Route::post('/register', 'UserController@register');

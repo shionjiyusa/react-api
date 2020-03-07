@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "setu",
+            "dialect": "MySQL",
+            "name": "setu",
+            "password": "7418035",
+            "port": 3306,
+            "server": "localhost",
+            "username": "yusa"
+        }
+    ]
+}
